@@ -189,7 +189,9 @@ a[ui-sref="admin.auth"] {
   }
   /* End Footer */
 }
-
+input{
+	color:black;
+}
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
