@@ -57,7 +57,11 @@
 			url: '/signUp',
 			templateUrl: 'src/public/signUp.html',
 			controller: 'SignUpController',
-			controllerAs: 'signUpCtrl'
+			controllerAs: 'signUpCtrl',
+			resolve: {
+				user: ['MenuService', function (MenuService) {MenuService.resetInService();
+				}]
+			}
 		});
 	}
 })();

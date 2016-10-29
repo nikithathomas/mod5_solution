@@ -54,6 +54,16 @@ service.saveInService=function(user){
 	service.saved=user.saved;
 }
 
+service.resetInService=function(){
+	service.firstName="";
+	service.lastName="";
+	service.email="";
+	service.phoneNumber="";
+	service.itemName="";
+	service.itemDesc="";
+	service.shortName="";
+	service.saved="";
+}
 service.getFromService=function(){
 	var user= {
 					     firstName:service.firstName,
